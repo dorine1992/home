@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">作业圈</string>
+    <string name="title_section1">首页</string>
+    <string name="title_section2">我的作业</string>
+    <string name="title_section3">我的考试</string>
+    <string name="title_section4">我的课程</string>
+    <string name="title_section5">分享圈</string>
+    <string name="fankui">反馈</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">人人账号登陆</string>
+    <string name="action_settings">设置</string>
+    <string name="myHomework">我的作业(待完成)</string>
+    <string name="test">近期考试</string>
+    <string name="lesson">明日课程</string>
+    <string name="time">节次</string>
+    <string name="keChenMing">课程名</string>
+    <string name="address">地点</string>
+    <string name="toDo">待完成</string>
+    <string name="done">已完成</string>
+    <string name="arrangement">考试安排</string>
+    <string name="zeng">增加</string>
+    <string name="day">星期</string>
+    <string name="newWork">新增作业</string>
+    <string name="info">我的账号信息</string>
+</resources>

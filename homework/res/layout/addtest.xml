@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="441dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/addtestInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="新增考试"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#54c6ff" />
+
+        <TextView
+            android:id="@+id/worklistitemDead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/addtestInfo"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="22dp"
+            android:text="科目："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/testlesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/worklistitemDead"
+            android:layout_toRightOf="@+id/worklistitemDead" />
+
+        <TextView
+            android:id="@+id/lessonteacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/worklistitemDead"
+            android:layout_below="@+id/testlesson"
+            android:layout_marginTop="17dp"
+            android:text="日期 ： "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <DatePicker
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lessonteacher" />
+
+        <TextView
+            android:id="@+id/lessonjieci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lessonteacher"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="14dp"
+            android:text="时间："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TimePicker
+            android:id="@+id/testtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lessonjieci"
+            android:layout_below="@+id/lessonjieci"
+            android:layout_marginTop="14dp" />
+
+        <Button
+            android:id="@+id/savetest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="保存" />
+
+    </RelativeLayout>
+
+</ScrollView>

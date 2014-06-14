@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="414dp" >
+
+        <TextView
+            android:id="@+id/lessonstring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="课程"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#54c6ff" />
+
+        <TextView
+            android:id="@+id/lessonteacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lessonstring"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="16dp"
+            android:text="名称"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/worklistitemDead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lessonteacher"
+            android:layout_below="@+id/lessonteacher"
+            android:layout_marginTop="26dp"
+            android:text="老师"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/lessonjieci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/worklistitemDead"
+            android:layout_below="@+id/worklistitemDead"
+            android:layout_marginTop="30dp"
+            android:text="教室"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lessonjieci"
+            android:layout_below="@+id/lessonjieci"
+            android:layout_marginTop="24dp"
+            android:text="星期"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/lessonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lessonteacher"
+            android:layout_alignBottom="@+id/lessonteacher"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/lessonteacher"
+            android:ems="10" >
+           <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/worklistitemDead"
+            android:layout_alignBottom="@+id/worklistitemDead"
+            android:layout_alignLeft="@+id/lessonName"
+            android:layout_alignRight="@+id/lessonName"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/classroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lessonjieci"
+            android:layout_alignLeft="@+id/teacher"
+            android:layout_alignRight="@+id/teacher"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/saveLesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/lessonfanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="返回" />
+
+        <Spinner
+            android:id="@+id/xingqi"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/classroom"
+            android:layout_alignTop="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xingqi"
+            android:layout_toLeftOf="@+id/lessonName"
+            android:text="节次"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/xingqi"
+            android:layout_below="@+id/xingqi" >
+
+            <EditText
+                android:id="@+id/jieci1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.64" >
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.64"
+                android:text="      --"
+                />
+
+            <EditText
+                android:id="@+id/jieci2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.64" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.64"
+                android:text="节" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

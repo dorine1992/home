@@ -1,0 +1,146 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/worklistitemtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="题目"
+                
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+           <EditText
+                android:id="@+id/checkworktitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:ems="10" >
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/worklistitemtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <AutoCompleteTextView
+                android:id="@+id/checkworklesson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:completionThreshold="1"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/worklistitemtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dealine"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/checkworkdeadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:ems="10" />
+
+            <DatePicker
+                android:id="@+id/editworkdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/worklistitemtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/checkworkcontent"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:ems="10"
+                android:visibility="gone"
+                android:enabled="false" />
+
+            <ImageView
+                android:id="@+id/workImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/index" />
+
+            <ImageView
+                android:id="@+id/addShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                android:src="@drawable/xiangce" />
+	<LinearLayout   android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lout"
+            android:layout_alignParentLeft="true">
+	<Button
+            android:id="@+id/bb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+	</LinearLayout>
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/saveEditwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/LinearLayout1"
+            android:visibility="gone"
+            android:onClick="save"
+            android:text="保存" />
+
+        <Button
+            android:id="@+id/editcheckwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/LinearLayout1"
+            android:onClick="edit"
+            android:text="编辑" />
+
+        <Button
+            android:id="@+id/backcheckwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/LinearLayout1"
+            android:layout_below="@+id/LinearLayout1"
+            android:onClick="back"
+            android:text="返回" />
+
+    </RelativeLayout>
+
+</ScrollView>
