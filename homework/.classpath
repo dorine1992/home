@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
-	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/renren"/>
 	<classpathentry kind="lib" path="D:/tool/adt-bundle-windows-x86_64-20140321/sdk/platforms/android-19/android.jar">
@@ -16,5 +15,6 @@
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="lib" path="libs/RennSDK-Android.jar"/>
 	<classpathentry kind="lib" path="libs/umeng-sdk-analytics_v5.2.2_fb_v4.3.1_update_v2.4.1.jar"/>
+	<classpathentry kind="src" path="/android-support-v7-appcompat"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
